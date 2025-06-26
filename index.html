@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAS 2025 - Paper Download</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .paper-grid {
+            display: grid;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .paper-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .paper-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            border-color: #667eea;
+        }
+
+        .paper-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .paper-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .paper-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .paper-type {
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+
+        .paper-size {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .download-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .download-icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #666;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #e9ecef;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .paper-card {
+                padding: 20px;
+            }
+            
+            .paper-info {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>CAS 2025</h1>
+            <p>Dokumenten-Download Portal</p>
+        </div>
+        
+        <div class="content">
+            <h2>Verfügbare Dokumente</h2>
+            <p>Klicken Sie auf den Download-Button, um die gewünschten Dokumente herunterzuladen.</p>
+            
+            <div class="paper-grid">
+                <div class="paper-card">
+                    <div class="paper-title">Non-Binary Teacher Dokumentation</div>
+                    <div class="paper-info">
+                        <span class="paper-type">PDF</span>
+                        <span class="paper-size">61 KB</span>
+                    </div>
+                    <a href="cas_nonbinaryteacher.pdf" download class="download-btn">
+                        <svg class="download-icon" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z"/>
+                        </svg>
+                        Download PDF
+                    </a>
+                </div>
+                
+                <div class="paper-card">
+                    <div class="paper-title">CAS Programm 2025</div>
+                    <div class="paper-info">
+                        <span class="paper-type">DOCX</span>
+                        <span class="paper-size">31 KB</span>
+                    </div>
+                    <a href="CAS_Programm 2025.docx" download class="download-btn">
+                        <svg class="download-icon" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z"/>
+                        </svg>
+                        Download DOCX
+                    </a>
+                </div>
+                
+                <div class="paper-card">
+                    <div class="paper-title">Transidentität Teil 1 - CAS Präsentation</div>
+                    <div class="paper-info">
+                        <span class="paper-type">PPTX</span>
+                        <span class="paper-size">22 MB</span>
+                    </div>
+                    <a href="Transidentität_Teil1_CAS_22112024v3.pptx" download class="download-btn">
+                        <svg class="download-icon" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z"/>
+                        </svg>
+                        Download PPTX
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <p>Alle Dokumente sind für den CAS 2025 Kurs verfügbar.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
