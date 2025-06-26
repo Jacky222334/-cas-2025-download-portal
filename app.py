@@ -54,7 +54,11 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# Header
+# Header with image
+col1, col2, col3 = st.columns([1, 2, 1])
+with col2:
+    st.image("Design ohne Titel.png", width=200)
+
 st.markdown("""
 <div class="main-header">
     <h1>🎓 CAS 2025</h1>
