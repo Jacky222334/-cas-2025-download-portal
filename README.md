@@ -1,6 +1,8 @@
-# CAS 2025 - Paper Download Portal
+# CAS 2025 - Gesundheitsdaten & Dokumente Portal
 
-Eine Streamlit-Anwendung zum Download von CAS-Dokumenten.
+Zwei Streamlit-Anwendungen für CAS 2025:
+1. **Apple Health Herzfrequenz-Analyse** - Analyse von Pulsdaten
+2. **Dokumenten-Download Portal** - Download von CAS-Dokumenten
 
 ## 🚀 Lokale Nutzung
 
@@ -8,7 +10,10 @@ Eine Streamlit-Anwendung zum Download von CAS-Dokumenten.
 # Abhängigkeiten installieren
 pip install -r requirements.txt
 
-# App starten
+# Herzfrequenz-Analyse starten
+streamlit run heart_rate_app.py
+
+# ODER: Dokumenten-Portal starten
 streamlit run app.py
 ```
 
@@ -32,7 +37,21 @@ Die App ist dann verfügbar unter:
 ### Option 3: Railway/Render (Kostenlos möglich)
 Moderne Alternativen zu Heroku
 
-## 📁 Verfügbare Dokumente
+## ❤️ Apple Health Herzfrequenz-Analyse
+
+**Neue Funktion!** Analysieren Sie Ihre Herzfrequenzdaten aus Apple Health:
+
+- 📊 Zeitverlauf-Visualisierung
+- 📈 Tagesstatistiken und Trends  
+- ⏰ Tageszeit-Analyse
+- 🔍 Anomalie-Erkennung
+- 📥 CSV-Export
+
+**Dokumentation:**
+- [README_HERZFREQUENZ.md](README_HERZFREQUENZ.md) - Technische Dokumentation
+- [ANLEITUNG.md](ANLEITUNG.md) - Ausführliche Bedienungsanleitung
+
+## 📁 Verfügbare Dokumente (app.py)
 
 - `cas_nonbinaryteacher.pdf` - Non-Binary Teacher Dokumentation
 - `CAS_Programm 2025.docx` - CAS Programm 2025
@@ -41,5 +60,6 @@ Moderne Alternativen zu Heroku
 ## 🔒 Sicherheitshinweise
 
 - Dokumente sind öffentlich downloadbar
+- **Gesundheitsdaten werden nur lokal verarbeitet** (nicht gespeichert)
 - Für sensible Daten: Authentifizierung hinzufügen
 - HTTPS für Produktionsumgebung empfohlen 
