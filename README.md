@@ -1,6 +1,8 @@
-# CAS 2025 - Paper Download Portal
+# CAS 2025 - Gesundheitsdaten & Dokumente Portal
 
-Eine Streamlit-Anwendung zum Download von CAS-Dokumenten.
+Ein zentrales Dashboard mit zwei Hauptfunktionen:
+1. **Apple Health Herzfrequenz-Analyse** - Analyse von Pulsdaten
+2. **Dokumenten-Download Portal** - Download von CAS-Dokumenten
 
 ## 🚀 Lokale Nutzung
 
@@ -8,8 +10,12 @@ Eine Streamlit-Anwendung zum Download von CAS-Dokumenten.
 # Abhängigkeiten installieren
 pip install -r requirements.txt
 
-# App starten
-streamlit run app.py
+# Dashboard starten (empfohlen)
+streamlit run dashboard.py
+
+# ODER: Einzelne Apps starten
+streamlit run heart_rate_app.py   # Nur Herzfrequenz-Analyse
+streamlit run app.py                # Nur Dokumenten-Portal
 ```
 
 Die App ist dann verfügbar unter:
@@ -32,6 +38,31 @@ Die App ist dann verfügbar unter:
 ### Option 3: Railway/Render (Kostenlos möglich)
 Moderne Alternativen zu Heroku
 
+## 🎯 Dashboard-Funktionen
+
+### Startseite
+- Übersicht über alle verfügbaren Funktionen
+- Schnellnavigation zu Herzfrequenz-Analyse und Dokumenten-Portal
+- System-Status und Statistiken
+
+### ❤️ Herzfrequenz-Analyse
+
+Analysieren Sie Ihre Herzfrequenzdaten aus Apple Health:
+
+- 📊 Zeitverlauf-Visualisierung
+- 📈 Tagesstatistiken und Trends  
+- ⏰ Tageszeit-Analyse
+- 🔍 Anomalie-Erkennung
+- 📥 CSV-Export
+
+**Dokumentation:**
+- [README_HERZFREQUENZ.md](README_HERZFREQUENZ.md) - Technische Dokumentation
+- [ANLEITUNG.md](ANLEITUNG.md) - Ausführliche Bedienungsanleitung
+
+### 📚 Dokumenten-Portal
+
+Zentrale Verwaltung aller CAS-Dokumente mit Download-Funktion.
+
 ## 📁 Verfügbare Dokumente
 
 - `cas_nonbinaryteacher.pdf` - Non-Binary Teacher Dokumentation
@@ -41,5 +72,6 @@ Moderne Alternativen zu Heroku
 ## 🔒 Sicherheitshinweise
 
 - Dokumente sind öffentlich downloadbar
+- **Gesundheitsdaten werden nur lokal verarbeitet** (nicht gespeichert)
 - Für sensible Daten: Authentifizierung hinzufügen
 - HTTPS für Produktionsumgebung empfohlen 
